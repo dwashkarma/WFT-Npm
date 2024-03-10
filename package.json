@@ -19,6 +19,7 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
+
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
@@ -35,7 +36,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "signature",
+  "name": "wft-signature",
   "author": "DwashKarma",
   "module": "dist/signature.esm.js",
   "size-limit": [
