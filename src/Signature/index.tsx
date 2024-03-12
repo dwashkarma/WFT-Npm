@@ -1,5 +1,11 @@
 import React from 'react';
-export function Signature({ h, w }: any) {
+const Images = require('../images/WFT.jpg');
+
+interface SignatureProps {
+  h?: string;
+  w?: string;
+}
+export function Signature({ h, w }: SignatureProps) {
   const imageStyle = {
     height: h,
     width: w,
@@ -8,7 +14,7 @@ export function Signature({ h, w }: any) {
     backgroundRepeat: 'repeat',
     display: 'inline-block',
   };
-  return <span style={imageStyle}></span>;
+  return <img style={imageStyle} src={Images} alt="image" />;
 }
 
 Signature.defaultProps = {
